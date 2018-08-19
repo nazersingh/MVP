@@ -1,17 +1,17 @@
-package com.example.saini.mvp.ui.fragments;
+package com.example.saini.mvp.view.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.saini.mvp.R;
 import com.example.saini.mvp.interfaces.FragmentCallBack;
+import com.example.saini.mvp.util.PrintLog;
 
-public class FragmentE extends BaseFragment implements FragmentCallBack {
+public class FragmentE extends BaseFragment {
     View view;
     private final String TAG = this.getClass().getSimpleName();
 
@@ -40,13 +40,7 @@ public class FragmentE extends BaseFragment implements FragmentCallBack {
             setToolbarTitle("Fragment E");
     }
 
-    @Override
-    public void onBackPressed(Object o) {
-
-    }
-
-    @Override
-    public void onActivityResult(Object o) {
-
+    public void onSearchTextChange(String searchString) {
+        PrintLog.e(TAG,searchString);
     }
 }

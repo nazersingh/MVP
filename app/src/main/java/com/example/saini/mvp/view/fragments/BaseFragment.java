@@ -1,11 +1,10 @@
-package com.example.saini.mvp.ui.fragments;
+package com.example.saini.mvp.view.fragments;
 
 
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 
-import com.example.saini.mvp.interfaces.FragmentCallBack;
-import com.example.saini.mvp.ui.activity.MainActivity;
+import com.example.saini.mvp.view.activity.MainActivity;
 
 public abstract class BaseFragment extends Fragment {
 

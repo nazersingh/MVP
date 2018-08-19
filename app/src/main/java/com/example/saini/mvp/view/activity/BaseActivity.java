@@ -1,4 +1,4 @@
-package com.example.saini.mvp.ui.activity;
+package com.example.saini.mvp.view.activity;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;

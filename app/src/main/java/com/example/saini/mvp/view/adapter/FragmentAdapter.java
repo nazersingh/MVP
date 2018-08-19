@@ -1,4 +1,4 @@
-package com.example.saini.mvp.ui.adapter;
+package com.example.saini.mvp.view.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

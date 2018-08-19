@@ -49,5 +49,8 @@
     <string name="enter_old_password" />
     <string name="enter_new_password" />
     <string name="err_msg_password_match" />
+    <string name="action_status">Status</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
 
 </resources>
