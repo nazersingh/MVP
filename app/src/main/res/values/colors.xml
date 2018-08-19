@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="textColorWhite">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="textColorBlack">#000000</color>
+    <color name="transparentBlack">#8b000000</color>
+    <color name="repplecolor">#ab1414</color>
+    <color name="textInputLayoutHintColor">#ff9100</color>
+    <color name="red">#ed0a0a</color>
+    <color name="textColorRed">#ed0a0a</color>
+    <color name="edittextLinegrey">#666666</color>
+    <color name="EditTextColor">#000000</color>
+    <color name="TabColorUnSelected">#560505</color>
+    <color name="blue">#0609dc</color>
+    <color name="green">#31d408</color>
+    <color name="ButtonColorGreen">#31d408</color>
+    <color name="RatingGold">#ffd903</color>
+</resources>
