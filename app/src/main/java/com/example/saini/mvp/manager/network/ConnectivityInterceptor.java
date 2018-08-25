@@ -11,9 +11,7 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 
-/**
- * Created by igniva-android-14 on 5/10/17.
- */
+
 
 public class ConnectivityInterceptor implements Interceptor {
 
