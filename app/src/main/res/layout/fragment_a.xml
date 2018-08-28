@@ -4,5 +4,11 @@
     android:layout_height="match_parent"
     android:background="@color/red"
     android:orientation="vertical">
+<Button
+    android:layout_margin="@dimen/dimen_10dp"
+    android:id="@+id/btn_download"
+    android:text="Download"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
 
 </LinearLayout>

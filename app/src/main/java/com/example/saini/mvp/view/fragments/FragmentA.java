@@ -7,18 +7,25 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.saini.mvp.R;
+import com.example.saini.mvp.presenter.FragmentAPresenter;
 import com.example.saini.mvp.util.PrintLog;
+
+import okhttp3.ResponseBody;
 
 public class FragmentA extends BaseFragment {
     private String TAG = this.getClass().getSimpleName();
     Handler handler;
+private FragmentAPresenter fragmentAPresenter;
 
+String mVideoFile="http://techslides.com/demos/sample-videos/small.mp4";
+    View view;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_a, container, false);
+        view = inflater.inflate(R.layout.fragment_a, container, false);
         setUpLayout();
         return view;
     }
@@ -27,7 +34,29 @@ public class FragmentA extends BaseFragment {
     @Override
     public void setUpLayout() {
         handler = new Handler();
+        fragmentAPresenter=new FragmentAPresenter(presenterCallback);
+
+       view.findViewById(R.id.btn_download).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                fragmentAPresenter.callDownload(mVideoFile);
+
+            }
+        });
     }
+
+    FragmentAPresenter.PresenterCallback presenterCallback=new FragmentAPresenter.PresenterCallback() {
+        @Override
+        public void presenterSuccess(ResponseBody responseBody) {
+
+        }
+
+        @Override
+        public void presenterFailure(Throwable throwable) {
+
+        }
+    };
 
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
