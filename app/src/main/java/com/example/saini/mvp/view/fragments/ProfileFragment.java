@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.saini.mvp.R;
+import com.example.saini.mvp.view.base.BaseFragment;
 
 public class ProfileFragment extends BaseFragment {
 
@@ -22,6 +23,11 @@ public class ProfileFragment extends BaseFragment {
     @Override
     public void setUpLayout() {
         setToolbarTitle("Profile");
+    }
+
+    @Override
+    public void setUpView() {
+
     }
 
 

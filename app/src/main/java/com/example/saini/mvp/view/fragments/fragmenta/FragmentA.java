@@ -1,4 +1,4 @@
-package com.example.saini.mvp.view.fragments;
+package com.example.saini.mvp.view.fragments.fragmenta;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -7,10 +7,9 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import com.example.saini.mvp.R;
-import com.example.saini.mvp.presenter.FragmentAPresenter;
+import com.example.saini.mvp.view.base.BaseFragment;
 import com.example.saini.mvp.util.PrintLog;
 
 import okhttp3.ResponseBody;
@@ -44,6 +43,11 @@ String mVideoFile="http://techslides.com/demos/sample-videos/small.mp4";
 
             }
         });
+    }
+
+    @Override
+    public void setUpView() {
+
     }
 
     FragmentAPresenter.PresenterCallback presenterCallback=new FragmentAPresenter.PresenterCallback() {

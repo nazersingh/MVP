@@ -1,6 +1,4 @@
-package com.example.saini.mvp.presenter;
-
-import com.example.saini.mvp.model.FragmentAModel;
+package com.example.saini.mvp.view.fragments.fragmenta;
 
 import okhttp3.ResponseBody;
 

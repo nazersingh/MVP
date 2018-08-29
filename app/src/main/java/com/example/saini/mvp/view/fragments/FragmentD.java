@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 import com.example.saini.mvp.R;
 import com.example.saini.mvp.util.PrintLog;
+import com.example.saini.mvp.view.base.BaseFragment;
 
 public class FragmentD extends BaseFragment {
 
@@ -26,6 +27,12 @@ public class FragmentD extends BaseFragment {
     public void setUpLayout() {
 
     }
+
+    @Override
+    public void setUpView() {
+
+    }
+
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
         if (isVisibleToUser&&isResumed())

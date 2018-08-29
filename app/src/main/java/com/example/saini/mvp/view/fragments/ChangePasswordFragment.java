@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.saini.mvp.R;
+import com.example.saini.mvp.view.base.BaseFragment;
 
 public class ChangePasswordFragment extends BaseFragment {
     @Nullable
@@ -21,6 +22,11 @@ public class ChangePasswordFragment extends BaseFragment {
     @Override
     public void setUpLayout() {
         setToolbarTitle("Change Password");
+    }
+
+    @Override
+    public void setUpView() {
+
     }
 
 }

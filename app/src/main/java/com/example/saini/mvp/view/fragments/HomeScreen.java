@@ -7,20 +7,19 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.SearchView;
-import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Switch;
 
 import com.example.saini.mvp.R;
 import com.example.saini.mvp.interfaces.FragmentSearchCallback;
 import com.example.saini.mvp.view.activity.MainActivity;
 import com.example.saini.mvp.view.adapter.FragmentAdapter;
+import com.example.saini.mvp.view.base.BaseFragment;
+import com.example.saini.mvp.view.fragments.fragmenta.FragmentA;
 
 import java.util.ArrayList;
 import java.util.Objects;
@@ -69,6 +68,11 @@ public class HomeScreen extends BaseFragment implements ViewPager.OnPageChangeLi
         viewPager.addOnPageChangeListener(this);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
+
+    }
+
+    @Override
+    public void setUpView() {
 
     }
 

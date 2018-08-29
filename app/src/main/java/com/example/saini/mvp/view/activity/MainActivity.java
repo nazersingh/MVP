@@ -22,9 +22,11 @@ import android.widget.Toast;
 import com.example.saini.mvp.R;
 import com.example.saini.mvp.interfaces.FragmentSearchCallback;
 import com.example.saini.mvp.util.Utility;
+import com.example.saini.mvp.view.base.BaseActivity;
 import com.example.saini.mvp.view.fragments.Splash;
 import com.example.saini.mvp.util.LocationHelper;
 import com.example.saini.mvp.util.PrintLog;
+import com.facebook.CallbackManager;
 
 import java.lang.reflect.Field;
 
@@ -37,13 +39,14 @@ public class MainActivity extends BaseActivity {
     private MenuItem item_search;
     private Menu search_menu;
     private boolean isSearching;
+    private CallbackManager callbackManager;
     private FragmentSearchCallback<String> fragmentSearchCallback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        callbackManager = CallbackManager.Factory.create();
         setSupportActionBar(findViewById(R.id.toolbar));
         setSearchtollbar();
         addFragment(new Splash());
@@ -88,8 +91,8 @@ public class MainActivity extends BaseActivity {
         onAddFragment(R.id.container, fragment);
     }
 
-    public void replaceFragment(Fragment fragment, boolean b) {
-        onReplaceFragment(R.id.container, fragment, b);
+    public void replaceFragment(Fragment fragment ) {
+        onReplaceFragment(R.id.container, fragment );
     }
 
 

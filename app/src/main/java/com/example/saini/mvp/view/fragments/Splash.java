@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.saini.mvp.R;
+import com.example.saini.mvp.view.base.BaseFragment;
 
 public class Splash extends BaseFragment {
     // Splash screen timer
@@ -38,6 +39,11 @@ public class Splash extends BaseFragment {
                 onResume();
             }
         }, SPLASH_TIME_OUT);
+    }
+
+    @Override
+    public void setUpView() {
+
     }
 
     @Override

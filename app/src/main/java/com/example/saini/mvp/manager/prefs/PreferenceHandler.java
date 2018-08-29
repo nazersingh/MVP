@@ -1,4 +1,4 @@
-package com.example.saini.mvp.util;
+package com.example.saini.mvp.manager.prefs;
 
 import android.content.Context;
 import android.content.SharedPreferences;

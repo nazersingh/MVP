@@ -8,7 +8,7 @@ import com.example.saini.mvp.BuildConfig;
 import com.example.saini.mvp.application.MyApplication;
 import com.example.saini.mvp.interfaces.ApiInterface;
 import com.example.saini.mvp.interfaces.GenericCallBack;
-import com.example.saini.mvp.util.PreferenceHandler;
+import com.example.saini.mvp.manager.prefs.PreferenceHandler;
 import com.example.saini.mvp.util.PrintLog;
 
 import java.io.File;
@@ -59,7 +59,7 @@ public class RetrofitClient {
 
     final String mBaseUrl = "http://techslides.com/demos/sample-videos/";
 
-    ApiInterface getClient() {
+    private ApiInterface getClient() {
         OkHttpClient okHttpClient = new OkHttpClient.Builder()
                 .addInterceptor(new ConnectivityInterceptor(MyApplication.getInstance()))
                 .addInterceptor(new Interceptor() {
@@ -178,4 +178,6 @@ public class RetrofitClient {
             return false;
         }
     }
+
+
 }

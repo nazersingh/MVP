@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 import com.example.saini.mvp.R;
 import com.example.saini.mvp.util.PrintLog;
+import com.example.saini.mvp.view.base.BaseFragment;
 
 public class FragmentB extends BaseFragment {
 
@@ -24,6 +25,11 @@ public class FragmentB extends BaseFragment {
 
     @Override
     public void setUpLayout() {
+
+    }
+
+    @Override
+    public void setUpView() {
 
     }
 

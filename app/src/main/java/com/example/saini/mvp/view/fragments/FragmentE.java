@@ -8,8 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.saini.mvp.R;
-import com.example.saini.mvp.interfaces.FragmentCallBack;
 import com.example.saini.mvp.util.PrintLog;
+import com.example.saini.mvp.view.base.BaseFragment;
 
 public class FragmentE extends BaseFragment {
     View view;
@@ -30,6 +30,11 @@ public class FragmentE extends BaseFragment {
         {
             addFragment(new ProfileFragment());
         });
+
+    }
+
+    @Override
+    public void setUpView() {
 
     }
 

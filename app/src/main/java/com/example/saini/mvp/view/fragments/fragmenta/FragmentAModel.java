@@ -1,4 +1,4 @@
-package com.example.saini.mvp.model;
+package com.example.saini.mvp.view.fragments.fragmenta;
 
 import com.example.saini.mvp.interfaces.GenericCallBack;
 import com.example.saini.mvp.manager.network.RetrofitClient;
